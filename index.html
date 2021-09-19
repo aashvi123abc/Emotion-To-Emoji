@@ -1,0 +1,80 @@
+ 
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+      <h3 class="btn btn-warning heading">EMOTION TO EMOJI APP
+        <br>
+        <span>&#128522;</span>
+        <span>&#128512;</span>
+        <span>&#128532;</span>
+        <span>&#128546;</span>
+        <span>&#128545;</span>
+        <span>&#128548;</span>
+        </h3>
+      <br><br>
+
+      <p style="font-size: 22px;">Take your selfie to generate emoji
+      	<br>
+        <b style="color: darkgreen">Are you Happy?</b>
+        <br>
+        <b style="color: darkblue">Are you Sad?</b>
+        <br>
+        <b style="color:darkred">Are you Angry?</b>
+        <br>
+      </p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Webcam- </label>
+<div id="camera"></div>
+        <br><br>
+        <button style="background-image: linear-gradient(to right top, #ffffff, #f8d1fc, #ff97d2, #ff517f, #ff0000); color: black;" id="capturebutton" onclick="snapshot();">CAPTURE</button>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>PREDICTION NO.1</label>
+        <p id="emotionname">
+
+        </p>
+        <p id="emoji">
+
+        </p>
+        <label>PREDICTION NO.2</label>
+        <p id="emotionname1">
+
+        </p>
+
+        <p id="emoji1">
+
+        </p>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12"><label>
+        Snapshot-
+      </label>
+    <div id="result"></div>
+    <br><br>
+    <button id="predictimage" style="color: black; background-image: linear-gradient(to right top, #ff80c8, #f094da, #e2a7e6, #d6b6eb, #d0c4eb, #c5bbed, #b8b2f0, #a8aaf3, #898afb, #6969ff, #4645ff, #000aff);" onclick="check();">Predict! What Am I Feeling.....</button>
+    </div>
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
